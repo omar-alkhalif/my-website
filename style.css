@@ -188,3 +188,54 @@ section a:hover {
         padding: 22px;
     }
 }
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-top: 22px;
+}
+
+.project-card {
+    min-height: 250px;
+    padding: 22px;
+    border: 1px solid rgba(53, 201, 255, 0.22);
+    border-radius: 14px;
+    background: rgba(4, 15, 29, 0.6);
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    border-color: var(--green);
+    transform: scale(1.03);
+    box-shadow: 0 0 25px rgba(66, 245, 167, 0.18);
+}
+
+.project-number {
+    display: inline-block;
+    margin-bottom: 16px;
+    color: var(--purple);
+    font-family: "Orbitron", Arial, sans-serif;
+    font-size: 0.85rem;
+}
+
+.project-card h3 {
+    margin: 0 0 12px;
+    color: var(--text);
+    font-family: "Orbitron", Arial, sans-serif;
+}
+
+.tag {
+    display: inline-block;
+    margin: 5px 4px 0 0;
+    padding: 4px 9px;
+    color: var(--green);
+    font-size: 0.8rem;
+    border: 1px solid rgba(66, 245, 167, 0.4);
+    border-radius: 20px;
+}
+
+@media (max-width: 850px) {
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+}
