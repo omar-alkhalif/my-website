@@ -1,114 +1,113 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Omar - IT-Fachinformatiker für Systemintegration</title>
-    </head>
+    <meta name="description" content="IT-Portfolio von Omar Alkhlaif mit Cisco Network Lab und Lernprojekten.">
+    <title>Omar Alkhlaif | IT Network Lab</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
-    <nav>
-    <a href="#ueber-mich">Über mich</a>
-    <a href="#kenntnisse">Kenntnisse</a>
-    <a href="#projekte">Projekte</a>
-    <a href="#kontakt">Kontakt</a>
-</nav>
-    <header>
-        <h1>Willkommen auf persönliche Webseite</h1>
+    <nav aria-label="Hauptnavigation">
+        <a href="#ueber-mich">Über mich</a>
+        <a href="#network-lab">Network Lab</a>
+        <a href="#kenntnisse">Skills</a>
+        <a href="#projekte">Projekte</a>
+        <a href="#kontakt">Kontakt</a>
+    </nav>
+
+    <header class="hero">
+        <img class="profile-photo" src="images/omar-alkhlaif.png" alt="Porträt von Omar Alkhlaif">
+        <div>
+            <p class="eyebrow">IT SYSTEMINTEGRATION • CISCO NETWORKING</p>
+            <h1>Omar Alkhlaif</h1>
+            <p class="hero-text">Angehender Fachinformatiker für Systemintegration. Ich lerne Netzwerke, Cisco-Technologien, Windows Server und Active Directory praktisch in meinem IT-Lab.</p>
+            <a class="hero-button" href="#network-lab">Mein Network Lab ansehen</a>
+        </div>
     </header>
+
     <main>
         <section id="ueber-mich">
+            <p class="section-label">PROFILE</p>
             <h2>Über mich</h2>
-            <p>Ich absolviere derzeit eine Umschulung zum IT-Fachinformatiker für Systemintegration.</p>
-            <p>Mein Fokus liegt auf Netzwerktechnik, Active Directory und Windows Server-Administration.</p>
+            <p>Ich absolviere derzeit die Weiterbildung zum Fachinformatiker für Systemintegration bei TERTIA in Düsseldorf.</p>
+            <p>Ich bringe technisches Verständnis, eine sorgfältige Arbeitsweise und Erfahrung in der strukturierten Dokumentation mit. Mein Ziel ist es, diese Stärken in der IT-Systemintegration weiterzuentwickeln.</p>
         </section>
-        <section id="kontakt">
-            <h2>Kontakt</h2>
-            <p>Sie können mich per E-Mail unter <a href="mailto:omaralshaikh30@gmail.com">
-                omaralshaikh30@gmail.com
-            </a> erreichen.</p>
-        </section>
-        <section id="kenntnisse">
-            <h2>Meine Kenntnisse</h2>
-            <ul>
-                <li>Netzwerktechnik</li>
-                <li>Active Directory</li>
-                <li>Windows Server-Administration</li>
-                <li>IPv4 und IPv6</li>
+
+        <section id="now-learning">
+            <p class="section-label">CURRENT FOCUS</p>
+            <h2>Was ich gerade lerne</h2>
+            <ul class="focus-list">
+                <li><span>Cisco Networking</span><strong>IN PROGRESS</strong></li>
+                <li><span>Windows Server</span><strong>IN PROGRESS</strong></li>
+                <li><span>Active Directory</span><strong>IN PROGRESS</strong></li>
             </ul>
-            <section id="kenntnisse">
-    <h2>Meine Kenntnisse</h2>
-
-    <div class="skills-grid">
-        <article class="skill-card">
-            <span class="skill-icon">⌘</span>
-            <h3>Netzwerktechnik</h3>
-            <p>Grundlagen von Netzwerkstrukturen, Verbindungen und Fehleranalyse.</p>
-        </article>
-
-        <article class="skill-card">
-            <span class="skill-icon">◈</span>
-            <h3>Active Directory</h3>
-            <p>Verwaltung von Benutzern, Gruppen und Berechtigungen.</p>
-        </article>
-
-        <article class="skill-card">
-            <span class="skill-icon">▣</span>
-            <h3>Windows Server</h3>
-            <p>Grundkenntnisse in Administration und Server-Diensten.</p>
-        </article>
-
-        <article class="skill-card">
-            <span class="skill-icon">↔</span>
-            <h3>IPv4 &amp; IPv6</h3>
-            <p>Adressierung, Subnetze und Grundlagen moderner Netzwerke.</p>
-        </article>
-    </div>
-</section>
         </section>
+
+        <section id="network-lab">
+            <div class="lab-heading">
+                <div>
+                    <p class="section-label">HOME LAB</p>
+                    <h2>Cisco Network Lab</h2>
+                </div>
+                <span class="status"><i></i> LAB ONLINE</span>
+            </div>
+            <p>In meinem Lab verbinde ich Theorie mit Praxis: Ich plane Netzwerke, arbeite mit Cisco-Komponenten und dokumentiere meine Lernfortschritte.</p>
+
+            <div class="topology" aria-label="Vereinfachte Netzwerk-Topologie">
+                <div class="network-node router"><span>◉</span><strong>ROUTER</strong><small>Gateway</small></div>
+                <div class="network-link"></div>
+                <div class="network-node switch"><span>⌘</span><strong>SWITCH</strong><small>Distribution</small></div>
+                <div class="network-link"></div>
+                <div class="network-node clients"><span>▣</span><strong>CLIENTS</strong><small>Endpoints</small></div>
+            </div>
+
+            <div class="lab-tags">
+                <span>Cisco</span><span>Routing</span><span>Switching</span><span>IPv4 / IPv6</span><span>Troubleshooting</span>
+            </div>
+        </section>
+
+        <section id="terminal">
+            <p class="terminal-title"><span></span><span></span><span></span>omar@network-lab:~</p>
+            <pre><code><b>$ whoami</b>
+Future IT System Integration Specialist
+
+<b>$ current_focus</b>
+Cisco Networking | Windows Server | Active Directory
+
+<b>$ lab_status</b>
+<em>● Online and learning</em></code></pre>
+        </section>
+
+        <section id="kenntnisse">
+            <p class="section-label">TECH STACK</p>
+            <h2>Meine Skills</h2>
+            <div class="skills-grid">
+                <article class="skill-card"><span class="skill-icon">⌘</span><h3>Netzwerktechnik</h3><p>Grundlagen von Netzwerkstrukturen, Verbindungen und Fehleranalyse.</p></article>
+                <article class="skill-card"><span class="skill-icon">◈</span><h3>Active Directory</h3><p>Verwaltung von Benutzern, Gruppen und Berechtigungen.</p></article>
+                <article class="skill-card"><span class="skill-icon">▣</span><h3>Windows Server</h3><p>Grundkenntnisse in Administration und Server-Diensten.</p></article>
+                <article class="skill-card"><span class="skill-icon">↔</span><h3>IT-Support</h3><p>Strukturierte Problemlösung bei typischen Software- und Hardwareproblemen.</p></article>
+            </div>
+        </section>
+
         <section id="projekte">
-            <h2>Meine Projekte</h2>
-            <p>Ich arbeite an verschiedenen Projekten, um meine Fähigkeiten in der IT-Systemintegration zu verbessern.</p>
-            <h2>Mein GitHub-Profile</h2>
-            <p> Sie können meine GitHub-Profile unter <a href="https://github.com/omar-alkhalif">github.com/omar-alkhalif</a> finden.
-            </p><section id="projekte">
+            <p class="section-label">LEARNING BY DOING</p>
+            <h2>Meine Lernprojekte</h2>
+            <div class="project-grid">
+                <article class="project-card"><span class="project-number">01</span><h3>Netzwerk-Labor</h3><p>Lernprojekt zur Planung eines kleinen Netzwerks mit IPv4, IPv6 und grundlegender Fehleranalyse.</p><span class="tag">Netzwerktechnik</span><span class="tag">IPv4 / IPv6</span></article>
+                <article class="project-card"><span class="project-number">02</span><h3>Active Directory</h3><p>Lernprojekt zur Verwaltung von Benutzern, Gruppen und Berechtigungen in einer Windows-Domäne.</p><span class="tag">Active Directory</span><span class="tag">Windows Server</span></article>
+                <article class="project-card"><span class="project-number">03</span><h3>IT-Support</h3><p>Dokumentation typischer Support-Aufgaben und strukturierte Lösung technischer Probleme.</p><span class="tag">Troubleshooting</span><span class="tag">Dokumentation</span></article>
+            </div>
+        </section>
 
-    <div class="project-grid">
-        <article class="project-card">
-            <span class="project-number">01</span>
-            <h3>Netzwerk-Labor</h3>
-            <p>
-                Lernprojekt zur Planung eines kleinen Netzwerks mit IPv4,
-                IPv6 und grundlegender Fehleranalyse.
-            </p>
-            <span class="tag">Netzwerktechnik</span>
-            <span class="tag">IPv4 / IPv6</span>
-        </article>
-
-        <article class="project-card">
-            <span class="project-number">02</span>
-            <h3>Active Directory</h3>
-            <p>
-                Lernprojekt zur Verwaltung von Benutzern, Gruppen und
-                Berechtigungen in einer Windows-Domäne.
-            </p>
-            <span class="tag">Active Directory</span>
-            <span class="tag">Windows Server</span>
-        </article>
-
-        <article class="project-card">
-            <span class="project-number">03</span>
-            <h3>IT-Support</h3>
-            <p>
-                Dokumentation typischer Support-Aufgaben und strukturierte
-                Lösung von technischen Problemen.
-            </p>
-            <span class="tag">Troubleshooting</span>
-            <span class="tag">Dokumentation</span>
-        </article>
-    </div>
-</section>
+        <section id="kontakt">
+            <p class="section-label">LET'S CONNECT</p>
+            <h2>Kontakt</h2>
+            <p>Sie können mich per E-Mail unter <a href="mailto:omaralshaikh30@gmail.com">omaralshaikh30@gmail.com</a> erreichen.</p>
+            <p><a href="https://github.com/omar-alkhalif" target="_blank" rel="noopener noreferrer">Mein GitHub-Profil ↗</a></p>
         </section>
     </main>
+
+    <footer>© 2026 Omar Alkhlaif · Built for the next IT challenge.</footer>
 </body>
 </html>
