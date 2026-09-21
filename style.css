@@ -242,3 +242,58 @@ section a:hover {
 #projekte {
     grid-column: 1 / -1;
 }
+#kenntnisse {
+    grid-column: 1 / -1;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-top: 22px;
+}
+
+.skill-card {
+    padding: 22px;
+    border: 1px solid rgba(168, 85, 247, 0.3);
+    border-radius: 14px;
+    background: rgba(4, 15, 29, 0.6);
+    transition: 0.3s;
+}
+
+.skill-card:hover {
+    border-color: var(--purple);
+    box-shadow: 0 0 25px rgba(168, 85, 247, 0.22);
+    transform: translateY(-6px);
+}
+
+.skill-icon {
+    display: block;
+    margin-bottom: 14px;
+    color: var(--purple);
+    font-size: 1.8rem;
+}
+
+.skill-card h3 {
+    margin: 0 0 10px;
+    color: var(--text);
+    font-family: "Orbitron", Arial, sans-serif;
+    font-size: 1rem;
+}
+
+.skill-card p {
+    margin: 0;
+    font-size: 0.92rem;
+}
+
+@media (max-width: 850px) {
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+}
