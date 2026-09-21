@@ -239,3 +239,6 @@ section a:hover {
         grid-template-columns: 1fr;
     }
 }
+#projekte {
+    grid-column: 1 / -1;
+}
